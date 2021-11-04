@@ -2,6 +2,8 @@ package com.example.bp_fall_2021_quizapp;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     // Best practice is to make them private (can only be accessed within the class, or using getters/setters)
     // Each UI component that you want to reference needs a variable
 
+    private EditText nameInput;
+    private Button btn_Start;
+
     /**
      * Method used to start an activity. It's the first method to run when the
      * activity begins
@@ -22,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        nameInput = findViewById(R.id.name_input);
+        btn_Start = findViewById(R.id.btn_Start);
         // obtain user's name using findViewById
 
     }
@@ -37,10 +43,15 @@ public class MainActivity extends AppCompatActivity {
         // If the name field is empty, prompt user to enter name
 
         // If user has entered name, begin quiz
-
-        Intent intent = new Intent(this, QuizQuestionActivity.class);
-        startActivity(intent);
-        finish(); // close current activity
+        String name = nameInput.getText().toString();
+        if(name.isEmpty()){
+            Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show();
         }
-
+        else{
+            Intent intent = new Intent(this, QuizQuestionActivity.class);
+            startActivity(intent);
+            finish(); // close current activity
+        }
     }
+
+}
