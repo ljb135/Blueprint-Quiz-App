@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/NBA_Blue"
+    android:background="@drawable/wallpaper"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="@color/NBA_Blue_Light"
     android:gravity="center"
     android:padding="25dp"
     tools:context=".MainActivity">
@@ -30,8 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
-            >
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"

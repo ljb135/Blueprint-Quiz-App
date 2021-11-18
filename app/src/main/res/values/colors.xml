@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#2B2118</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="NBA_Blue">#1d428a</color>
+    <color name="NBA_Blue_Light">#759ae2</color>
     <color name="NBA_Red">#c8102e</color>
 </resources>

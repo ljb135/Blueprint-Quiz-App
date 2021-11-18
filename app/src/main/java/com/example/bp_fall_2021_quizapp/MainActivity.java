@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     // Each UI component that you want to reference needs a variable
 
     private EditText nameInput;
-    private Button btn_Start;
 
     /**
      * Method used to start an activity. It's the first method to run when the
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nameInput = findViewById(R.id.name_input);
-        btn_Start = findViewById(R.id.btn_Start);
         // obtain user's name using findViewById
 
     }
@@ -39,16 +37,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void startQuiz(View view){
         // set name variable every time user clicks "start"
-
         // If the name field is empty, prompt user to enter name
-
         // If user has entered name, begin quiz
+
         String name = nameInput.getText().toString();
         if(name.isEmpty()){
             Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show();
         }
         else{
             Intent intent = new Intent(this, QuizQuestionActivity.class);
+            intent.putExtra("Username", name);
             startActivity(intent);
             finish(); // close current activity
         }

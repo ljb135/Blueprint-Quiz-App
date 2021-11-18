@@ -11,4 +11,8 @@
     <string name="q1_choice3">Larry Bird - 13</string>
     <string name="q1_choice4">LeBron James - 12</string>
     <string name="submit_button">submit</string>
+
+    <string name="result">Congratulations!</string>
+    <string name="score">Your final score was -1.</string>
+    <string name="restart_button">Restart</string>
 </resources>
