@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">bp-fall-2021-quizapp</string>
+    <string name="app_name">NBA Quiz</string>
+    <string name="app_title">🏀 NBA Quiz</string>
+    <string name="start_button">Start</string>
+    <string name="welcome_intro">Take a short quiz and test your knowledge of the NBA!</string>
+    <string name="start_field_hint">Name</string>
+
+    <string name="q1_question">Which NBA player has won the most championships and how many did he win?</string>
+    <string name="q1_choice1">Bill Russell - 11</string>
+    <string name="q1_choice2">Michael Jordan - 11</string>
+    <string name="q1_choice3">Larry Bird - 13</string>
+    <string name="q1_choice4">LeBron James - 12</string>
+    <string name="submit_button">submit</string>
+
+    <string name="result">Congratulations!</string>
+    <string name="score">Your final score was -1.</string>
+    <string name="restart_button">Restart</string>
 </resources>
